@@ -1,0 +1,297 @@
+/* COLOR PALETTE
+
+Rich Black #01161e
+Gray #7D7C7A
+Sage #C9C19F
+Black Bean #3C0000
+Wine #6A2E35
+Off White #F4F4F4
+*/
+
+/*FONTS -----------------
+
+.shadows-into-light-two-regular {
+  font-family: "Shadows Into Light Two", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.roboto-flex-<uniquifier> {
+  font-family: "Roboto Flex", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+*/
+
+/* GLOBAL STYLES -----------------------------------------*/
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+        body {
+            background: #F4F4F4;
+            color: #01161e;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+            line-height: 1.4;
+        }
+    h1 {
+        font-size: 5rem;
+        margin: 0;
+
+    }
+    h2 {
+        color:#2a0000;
+        font-size: 3.5rem;
+        margin: 0;
+    }
+    h3 {
+        font-size: 2.5rem;
+        letter-spacing: .5;
+    }
+
+    h1,h2,h3 {
+        font-family: "Shadows Into Light Two", serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: auto;
+        
+    }
+
+/*link styles*/
+    a {
+        color: #6A2E35;
+        
+    }
+
+    a:hover {
+        color: #01161e;
+        text-decoration: none;
+    }
+
+    footer a {
+        color: #F4F4F4;
+    }
+
+    footer a:hover {
+        color: #6A2E35;
+    }
+
+    .btn {
+        background: #6A2E35;
+        color: #F4F4F4;
+        border-style: solid;
+        border-radius: 5px;
+        border-color: #01161e;
+        border-width: 2px;
+        padding: 10px;
+        text-decoration:none;
+        text-transform: uppercase;
+    }
+
+    .btn:hover {
+        background: #01161e;
+        color: #f4f4f4;
+        opacity: 0.8;
+    }
+
+    .content-wrapper {
+        margin: 0 auto;
+        padding: 30px;
+        max-width: 1000px;
+    }
+
+
+
+/* HOME -----------------------------------------*/
+    .home {
+        background: url(../images/seattle-ferris-wheel.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .home .content-wrapper {
+        flex: 1 0 auto;
+    }
+
+    .content-bg {
+        background: rgb(255 255 255 / 0.5);
+        padding: 30px;
+    }
+
+    .index-text {
+        text-align: center;
+    }
+
+    .index-body {
+        font-size: 12pt; 
+    }
+
+    .thanks {
+        font-style: italic;
+        color:#3C0000;
+        font-size: 12pt;
+    }
+
+/* RESUME -----------------------------------------*/
+    .resume header::before {
+        background: url(../images/seattle-ferris-wheel.jpg) center bottom;
+        display: block;
+        background-size: cover;
+        height: 400px;
+        content: "";
+    }
+
+/* Profile-----------------------------------------*/
+    .project-item {
+        margin: 30px 0;
+        padding: 20px;
+    }
+    .project-item img {
+        width: 300px;
+        float: left;
+        margin-right: 20px;
+    
+    }
+    .resume-section {
+        margin-bottom: 30px;
+    }
+
+    .resume-section h2 {
+        border-bottom: 1px dashed #3C0000;
+    }
+
+    .download-link {
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        font-size: 0.75em;
+    }
+
+   
+
+/* Work History -----------------------------------------*/
+    .work-item {
+        margin: 30px, 0
+    }
+
+    .work-details p {
+        margin: 0;
+    }
+
+    .work-summary {
+        font-size: 1.3rem;
+    }
+    .work-summary p:first-child {
+        margin-top: .8;
+        font-size: 1.4rem;
+        font-style: italic;
+        text-align: left;
+    }
+
+    @media screen and (min-width: 860px){
+        .work-item {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 10px;
+        }
+        .work-summary p:first-child {
+            margin-top: .8;
+            font-size: 1.4rem;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+        .education {
+            margin-top: 30px;
+        }
+        .additional {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+/* Education -----------------------------------------*/
+    .education-details {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+        margin: 30px 0;
+    }
+
+    .education-details p:first-child {
+        font-style: italic;
+        text-align: left;
+        font-size: 1.3rem;
+        margin-top: 0; 
+    }
+
+/* FOOTER -----------------------------------------*/
+    footer {
+        background:#01161e;
+        color:#F4F4F4;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    
+    
+    }
+        .social {
+            list-style-type: none;
+            padding:0%;
+
+        }
+        .social li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .social img {
+            width: 32px; 
+        }
+
+        .social img:hover {
+            opacity: 0.5;
+        }
+
+      
+
+     
